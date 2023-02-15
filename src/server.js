@@ -4,7 +4,7 @@ import cors from "cors";
 import mongoose, { mongo } from "mongoose";
 import { Server } from "socket.io";
 import { createServer } from "http";
-import { newConnectionHandler } from "./socket";
+import { newConnectionHandler } from "./socket/index.js";
 
 const expressServer = express();
 const port = process.env.PORT || 3001;
